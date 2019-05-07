@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "Action": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Represents the input of a <code>GetRecords</code> operation.",
+            "example": {
+                "ShardIterator": "arn:aws:dynamodb:us-west-2:111122223333:table/Forum/stream/2015-05-20T20:51:10.252|1|AAAAAAAAAAEvJp6D+zaQ...  <remaining characters omitted> ..."
+            },
+            "properties": {
+                "Limit": {
+                    "description": "The maximum number of records to return from the shard. The upper limit is 1000.",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "ShardIterator": {
+                    "description": "A shard iterator that was retrieved from a previous GetShardIterator operation. This iterator can be used to access the stream records in this shard.",
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "ShardIterator"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
