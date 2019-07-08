@@ -1,7 +1,7 @@
 {
     "name": "amazonaws-com-streams-dynamodb-connector",
     "version": "2012.0.0",
-    "description": "<fullname>Amazon DynamoDB</fullname> <p>Amazon DynamoDB Streams provides API actions for accessing streams and processing stream records. To learn more about application development with Streams, see <a href=\"http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html\">Capturing Table Activity with DynamoDB Streams</a> in the Amazon DynamoDB Developer Guide.</p>",
+    "description": "Amazon DynamoDB Amazon DynamoDB Streams provides API actions for accessing\nstreams and processing stream records. To learn more about application\ndevelopment with Streams, see Capturing Table Activity with DynamoDB Streams\n[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html] \nin the Amazon DynamoDB Developer Guide.",
     "main": "component.json",
     "dependencies": {
         "elasticio-node": "0.0.9",
